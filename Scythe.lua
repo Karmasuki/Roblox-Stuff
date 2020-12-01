@@ -3,6 +3,8 @@ Update: 1.0.0
 Created, Organized
 --]]
 
+-- Scythe is https://www.roblox.com/catalog/5890526241/Frozen-Scythe-of-Winter
+
 --// Network Shit \\--
 
 spawn(function()
