@@ -1,3 +1,6 @@
+-- first sword is https://www.roblox.com/catalog/4820152700/Shadow-Blademasters-Blade
+-- second sword is https://www.roblox.com/catalog/4524991457/Blademasters-Blade
+
 --// Netmwork \\--
 
 spawn(function()
