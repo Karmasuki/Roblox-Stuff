@@ -1,6 +1,6 @@
---// Pemis \\--
-
 -- Axe https://www.roblox.com/catalog/5355492641/Void-Lord-Axe
+
+--// Pemis \\--
 
 spawn(function()
     while true do
