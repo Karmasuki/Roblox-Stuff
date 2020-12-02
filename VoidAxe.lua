@@ -1,5 +1,7 @@
 --// Pemis \\--
 
+-- Axe https://www.roblox.com/catalog/5355492641/Void-Lord-Axe
+
 spawn(function()
     while true do
         game:GetService("RunService").Heartbeat:Wait();
@@ -10,9 +12,6 @@ spawn(function()
 end)
 
 --// Stumf \\--
-
--- Axe https://www.roblox.com/catalog/5355492641/Void-Lord-Axe
-
 
 local Players = game:GetService'Players'
 local LP = Players.LocalPlayer or Players.PlayerAdded:Wait()
