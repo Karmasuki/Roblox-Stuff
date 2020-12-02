@@ -1,5 +1,7 @@
 --// Yes Required \\--
 
+-- Axe https://www.roblox.com/catalog/4440400537/Legendary-Axe-of-Yzewrath
+
 spawn(function()
     while true do
         game:GetService("RunService").Heartbeat:Wait();
@@ -17,8 +19,6 @@ local Char = LP.Character or LP.CharacterAdded:Wait()
 local Hat = Char:WaitForChild'LegendaryAxeofYzeroth'
 
 --// No \\--
-
--- Axe https://www.roblox.com/catalog/4440400537/Legendary-Axe-of-Yzewrath
 
 local function Allign(Part0,Part1,Position,Angle)
     if Part0:FindFirstChild'AccessoryWeld' then Part0.AccessoryWeld:Destroy() end --Part0.SpecialMesh:Destroy() end
