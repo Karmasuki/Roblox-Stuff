@@ -9,9 +9,9 @@ Created, Organized
 
 spawn(function()
     while true do
-        game:GetService("RunService").Heartbeat:Wait();
+        game:GetService('RunService').Heartbeat:Wait();
         settings().Physics.AllowSleep = false;
-        game:GetService("Players").LocalPlayer.MaximumSimulationRadius = math.huge;
+        game:GetService('Players').LocalPlayer.MaximumSimulationRadius = math.huge;
         setsimulationradius(math.huge);
     end
 end)
