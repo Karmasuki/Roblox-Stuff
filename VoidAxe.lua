@@ -11,6 +11,9 @@ end)
 
 --// Stumf \\--
 
+-- Axe https://www.roblox.com/catalog/5355492641/Void-Lord-Axe
+
+
 local Players = game:GetService'Players'
 local LP = Players.LocalPlayer or Players.PlayerAdded:Wait()
 local Char = LP.Character or LP.CharacterAdded:Wait()
