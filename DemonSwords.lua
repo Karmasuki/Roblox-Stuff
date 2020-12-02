@@ -1,3 +1,6 @@
+-- first sword is https://www.roblox.com/catalog/4315489767/Demonic-Greatsword
+-- second sword is https://www.roblox.com/catalog/4506945409/Corrupt-Demonic-Greatsword
+
 -- // Network \\ --
 
 spawn(function()
