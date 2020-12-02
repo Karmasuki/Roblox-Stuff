@@ -18,7 +18,7 @@ local Char = LP.Character or LP.CharacterAdded:Wait()
 -- // Naming Hats \\--
 
 for i,v in pairs(Char:GetChildren()) do
-    if v:IsA('Accessory') and v.Name == 'MeshPartAccessory' and v.Handle.SpecialMesh.MeshId ~= "rbxassetid://4489232754" then
+    if v:IsA('Accessory') and v.Name == 'MeshPartAccessory' and v.Handle.SpecialMesh.MeshId ~= 'rbxassetid://4489232754' then
 if v.Handle.SpecialMesh.TextureId == 'http://www.roblox.com/asset/?id=4315250791' then v.Name = 'DemonSword'
     end
 if v.Handle.SpecialMesh.TextureId == 'http://www.roblox.com/asset/?id=4506940486' then v.Name = 'CorruptDemonSword'
