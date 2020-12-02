@@ -1,6 +1,7 @@
---// Yes Required \\--
-
 -- Axe https://www.roblox.com/catalog/4440400537/Legendary-Axe-of-Yzewrath
+
+
+--// Yes Required \\--
 
 spawn(function()
     while true do
