@@ -17,7 +17,7 @@ local Players = game:GetService'Players'
 local LP = Players.LocalPlayer or Players.PlayerAdded:Wait()
 local Char = LP.Character or LP.CharacterAdded:Wait()
 local Hat = Char:WaitForChild'ShadowBladeMasterAccessory'
-
+local IdleAnim1 = Char.Animate.idle.Animation1
 --// C0m \\--
 
 local function Allign(Part0,Part1,Position,Angle)
@@ -49,3 +49,13 @@ end
 --// Angles \\--
 
 Allign(Hat.Handle,Char['Right Arm'],Vector3.new(0,-1,-2.5),Vector3.new(0,-90,-42))
+
+--// Animations \\--
+IdleAnim1.AnimationId = "rbxassetid://96065457"
+--[[
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch1.AnimationId = 'rbxassetid://45873069'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch2.AnimationId = 'rbxassetid://74813494'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch3.AnimationId = 'rbxassetid://74897796'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch4.AnimationId = 'rbxassetid://306451377'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Idle.AnimationId = 'rbxassetid://96065457'
+--]]
