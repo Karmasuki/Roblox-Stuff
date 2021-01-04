@@ -51,3 +51,10 @@ Allign(Hat.Handle,Char['Right Arm'],Vector3.new(0,-0.6,-2.75),Vector3.new(30,-18
 --// Professional ScuffedJays \\--
 
 Char.Animate.idle.Animation1.AnimationId = 'rbxassetid://1323180718'
+--[[
+This is only for The Streets/Prison (ONLY USE IF YOU HAVE A BYPASS TO THE ANTICHEAT) l0l
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch1.AnimationId = 'rbxassetid://74894663'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch2.AnimationId = 'rbxassetid://74813494'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch3.AnimationId = 'rbxassetid://74897796'
+game:GetService('Players').LocalPlayer.Backpack.Punch.Punch4.AnimationId = 'rbxassetid://306451377'
+--]] 
