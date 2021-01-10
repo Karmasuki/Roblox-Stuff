@@ -45,7 +45,7 @@ StartClicking.MouseButton1Click:connect(function()
 	_G.Monkey = true
 	while _G.Monkey do
 		wait(.0000001)
-		game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.NetManagedInstances["ceacbc54-f172-4f96-a1d6-4a9235205b53"]:FireServer()
+		game:GetService('ReplicatedStorage')['rbxts_include']['node_modules'].net.NetManagedInstances['ceacbc54-f172-4f96-a1d6-4a9235205b53']:FireServer()
 	end
 end)
 
