@@ -17,7 +17,7 @@ local UI = Instance.new('Frame')
 local UICorner = Instance.new('UICorner')
 local TpCrates = Instance.new('TextButton')
 local P = game:GetService('Players').LocalPlayer
-local C = game:GetService('Workspace')[P.Name]
+local C = P.Character
 
 --// Fuck you Bitch \\--
 
@@ -45,9 +45,9 @@ TpCrates.Text = 'Tp Crates'
 TpCrates.TextColor3 = Color3.fromRGB(255, 255, 255)
 TpCrates.TextSize = 24.000
 TpCrates.MouseButton1Click:connect(function()
-    for i,v in pairs(game:GetService('Workspace').Crates:GetChildren()) do
-        v.CFrame = C.HumanoidRootPart.CFrame
-    end
+	for i,v in pairs(game:GetService('Workspace').Crates:GetChildren()) do
+		v.CFrame = C.HumanoidRootPart.CFrame
+	end
 end)
 
 Bruh = game:GetService('CoreGui').Holder.UI
