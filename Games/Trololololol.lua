@@ -46,7 +46,7 @@ TpCrates.TextColor3 = Color3.fromRGB(255, 255, 255)
 TpCrates.TextSize = 24.000
 TpCrates.MouseButton1Click:connect(function()
 	for i,v in pairs(game:GetService('Workspace').Crates:GetChildren()) do
-		v.CFrame = C.HumanoidRootPart.CFrame
+		v.CFrame = C.RightHand.CFrame
 	end
 end)
 
