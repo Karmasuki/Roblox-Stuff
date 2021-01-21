@@ -1,5 +1,7 @@
 --[[ 
 Project 1: Ascension
+Created By Karma
+Jack helped a fuck ton
  ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄   ▄    ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄   ▄▄ 
 █       █  █ █  █       █   █ █ █  █  █ █  █       █  █ █  █
 █    ▄▄▄█  █ █  █       █   █▄█ █  █  █▄█  █   ▄   █  █ █  █
@@ -24,6 +26,9 @@ local TP = Instance.new('TextButton')
 local UIGradient_3 = Instance.new('UIGradient')
 local UICorner_2 = Instance.new('UICorner')
 local Grad4 = Instance.new('Frame')
+local TpToGnome = Instance.new('TextButton')
+local Shadow2 = Instance.new('Frame')
+local Gnome = Instance.new('TextLabel')
 local UIGradient_4 = Instance.new('UIGradient')
 local UICorner_3 = Instance.new('UICorner')
 local Name = Instance.new('TextLabel')
@@ -31,6 +36,7 @@ local TPTEXT = Instance.new('TextLabel')
 local Shadow = Instance.new('Frame')
 local B = game:GetService('Players').LocalPlayer
 local C = B.Character
+local A = C.HumanoidRootPart
 
 --// UI WORK \\--
 
@@ -80,6 +86,7 @@ Close.ImageRectSize = Vector2.new(36, 36)
 Close.MouseButton1Click:connect(function()
     game:GetService('CoreGui').Base:Destroy()
 end)
+
 Grad3.Name = 'Grad3'
 Grad3.Parent = FutureUI
 Grad3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -108,11 +115,9 @@ TP.TextScaled = true
 TP.TextSize = 14.000
 TP.TextWrapped = true
 TP.MouseButton1Click:connect(function()
-    print('Clicked Once')
-    	for i,v in pairs(game:GetService('Workspace').Crates:GetChildren()) do
-		v.CFrame = C.RightHand.CFrame
-		print('Teleported Crates to you')
-end
+--// Thanks Jack \\--
+local B0x=function(b)local c=b.Character;if c and c:FindFirstChild'HumanoidRootPart'then for d,e in pairs(game:GetService('Workspace').Crates:GetChildren())do e.CFrame=c.HumanoidRootPart.CFrame end end end
+B0x(B)
 end)
 
 Shadow.Name = 'Shadow'
@@ -136,6 +141,46 @@ TPTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
 TPTEXT.TextScaled = true
 TPTEXT.TextSize = 14.000
 TPTEXT.TextWrapped = true
+
+TpToGnome.Name = 'TptoGnome'
+TpToGnome.Parent = Grad3
+TpToGnome.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TpToGnome.BorderSizePixel = 0
+TpToGnome.Position = UDim2.new(0, 326, 0, 17)
+TpToGnome.Size = UDim2.new(0, 180, 0, 45)
+TpToGnome.ZIndex = 2
+TpToGnome.Font = Enum.Font.GothamSemibold
+TpToGnome.Text = ''
+TpToGnome.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpToGnome.TextScaled = true
+TpToGnome.TextSize = 14.000
+TpToGnome.TextWrapped = true
+TpToGnome.MouseButton1Click:connect(function()
+A.CFrame = game:GetService('Workspace').Merchant.Gnome.Head.head.CFrame
+end)
+
+Shadow2.Name = 'Shadow2'
+Shadow2.Parent = TpToGnome
+Shadow2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow2.BorderSizePixel = 0
+Shadow2.Size = UDim2.new(1, 0, 1, 4)
+
+Gnome.Name = 'Gnome'
+Gnome.Parent = TpToGnome
+Gnome.AnchorPoint = Vector2.new(0.5, 0.5)
+Gnome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gnome.BackgroundTransparency = 1.000
+Gnome.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gnome.BorderSizePixel = 0
+Gnome.Position = UDim2.new(0.5, 0, 0.5, 0)
+Gnome.Size = UDim2.new(1, -20, 1, -20)
+Gnome.ZIndex = 2
+Gnome.Font = Enum.Font.GothamSemibold
+Gnome.Text = 'Tp To Gnome'
+Gnome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gnome.TextScaled = true
+Gnome.TextSize = 14.000
+Gnome.TextWrapped = true
 
 Grad4.Name = 'Grad4'
 Grad4.Parent = FutureUI
