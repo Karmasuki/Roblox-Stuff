@@ -115,5 +115,5 @@ Name.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name.TextSize = 40.000
 
 --// Dragging! \\--
-frame = game:GetService('CoreGui').Base.FutureUI
-frame.Draggable = true;frame.Selectable = true;frame.Active = true
+Bruh = game:GetService('CoreGui').Base.FutureUI
+Bruh.Draggable = true;Bruh.Selectable = true;Bruh.Active = true
