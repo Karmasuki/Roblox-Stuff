@@ -35,7 +35,7 @@ Base.Parent = game:GetService('CoreGui')
 FutureUI.Name = 'FutureUI'
 FutureUI.Parent = Base
 FutureUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FutureUI.Position = UDim2.new(0, 224, 0, 309)
+FutureUI.Position = UDim2.new(0, 700, 0, 309)
 FutureUI.Size = UDim2.new(0, 589, 0, 316)
 
 Grad1.Name = 'Grad1'
@@ -72,7 +72,9 @@ Close.ZIndex = 2
 Close.Image = "rbxassetid://3926305904"
 Close.ImageRectOffset = Vector2.new(924, 724)
 Close.ImageRectSize = Vector2.new(36, 36)
-
+Close.MouseButton1Click:connect(function()
+    game:GetService('CoreGui').Base:Destroy()
+end)
 Grad3.Name = 'Grad3'
 Grad3.Parent = FutureUI
 Grad3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -111,3 +113,7 @@ Name.Font = Enum.Font.TitilliumWeb
 Name.Text = 'Karmaware.nig'
 Name.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name.TextSize = 40.000
+
+--// Dragging! \\--
+frame = game:GetService('CoreGui').Base.FutureUI
+frame.Draggable = true;frame.Selectable = true;frame.Active = true
