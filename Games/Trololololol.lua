@@ -1,6 +1,5 @@
 --[[ 
 Project 1: Ascension
-NOTE: Resetting might break it, if so re-execute
  ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄   ▄    ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄   ▄▄ 
 █       █  █ █  █       █   █ █ █  █  █ █  █       █  █ █  █
 █    ▄▄▄█  █ █  █       █   █▄█ █  █  █▄█  █   ▄   █  █ █  █
@@ -33,7 +32,7 @@ local Shadow = Instance.new('Frame')
 local B = game:GetService('Players').LocalPlayer
 local C = B.Character
 
---// UI WORK and Scripting \\--
+--// UI WORK \\--
 
 Base.Name = 'Base'
 Base.Parent = game:GetService('CoreGui')
@@ -60,7 +59,7 @@ Grad2.Parent = FutureUI
 Grad2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Grad2.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Grad2.BorderSizePixel = 0
-Grad2.Position = UDim2.new(-0.0010905501, 0, -0.00119269651, 0)
+Grad2.Position = UDim2.new(0.00, 0,0.00, 0)
 Grad2.Size = UDim2.new(0, 589, 0, 29)
 
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(153, 28, 26)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(153, 28, 26))}
